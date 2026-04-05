@@ -1,0 +1,38 @@
+{
+  "name": "telegram-bot-coordinator",
+  "version": "1.0.0",
+  "description": "A coordinator for managing and routing messages across multiple Telegram bots",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "coordinator",
+    "multi-bot"
+  ],
+  "author": "chenwh8",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "grammy": "^1.42.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
